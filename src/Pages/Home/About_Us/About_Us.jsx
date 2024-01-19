@@ -6,9 +6,15 @@ import 'swiper/css/autoplay';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { EffectCards, Autoplay } from 'swiper/modules';
+import SectionTitle from "../../../Components/Shared/SectionTitle/SectionTitle";
 
 const About_Us = () => {
   return (
+    <>
+    <SectionTitle
+    title="Let's know about us"
+    subTitle="About us"
+    ></SectionTitle>
     <div className="my-8 mx-8 md:px-32 md:py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       <div>
         <h5 className="text-green-500 text-2xl font-bold font-teko ">
@@ -74,6 +80,8 @@ const About_Us = () => {
       </Swiper>
       </div>
     </div>
+   
+      </>
   );
 };
 
